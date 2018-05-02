@@ -6,8 +6,8 @@ module.exports = {
     app: [__dirname, 'src/index.jsx'].join('/')
   },
   output: {
-    path: __dirname,
-    filename: 'boundleFile.js'
+    path: [__dirname, 'public'].join('/'),
+    filename: 'bundleFile.js'
   },
   resolve: {
     extensions: ['root', '.js', '.jsx'],
